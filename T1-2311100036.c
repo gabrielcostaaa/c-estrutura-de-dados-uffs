@@ -104,8 +104,106 @@ printf("Duracao: %d horas", resultado_hora);
 	N4: 5			N4: -11
 	3 (+) e 1 (-)	0 (+) e 4 (-)
 */
+/*
 
+int a, b, c, d, contador_positivo, contador_negativo;
 
+printf("Digite os números a serem lidos: \n");
+scanf("%d %d %d %d", &a, &b, &c, &d);
+
+contador_negativo = 0;
+contador_positivo = 0;
+
+if (a >= 0) {
+    contador_positivo += 1;
+} else {
+    contador_negativo += 1;
+}
+
+if (b >= 0) {
+    contador_positivo += 1;
+} else {
+    contador_negativo += 1;
+}
+
+if (c >= 0) {
+    contador_positivo += 1;
+} else {
+    contador_negativo += 1;
+}
+
+if (d >= 0) {
+    contador_positivo += 1;
+} else {
+    contador_negativo += 1;
+}
+
+printf("São %d positivos e %d negativos", contador_positivo, contador_negativo);
+
+*/
+/*
+5. Você vai fazer um programa para classificar os competidores segundo as suas posições. 
+Foram criadas 5 classes: Top 5 (1-5), Top 10 (6-10), Top 20 (11-20), Top 30 (21-30) e Top 100 (outras posições). 
+Faça um programa que peça a posição do competidor e indique a classe do mesmo. 
+Exemplos de execução:
+	Posição: 12		Posição: 5		Posição: 34
+	Top 20			Top 5			Top 100
+*/
+/*
+int position;
+
+printf("Digite sua posição: \n");
+scanf("%d", &position);
+
+if (position <= 5 && position >= 1) {
+    printf("Posição: %d\n", position);
+    printf("Top 5");
+}
+if (position <= 10 && position >= 6) {
+    printf("Posição: %d\n", position);
+    printf("Top 10");
+}
+if (position <= 20 && position >= 11) {
+    printf("Posição: %d\n", position);
+    printf("Top 20");
+}
+if (position <= 30 && position >= 21) {
+    printf("Posição: %d\n", position);
+    printf("Top 30");
+}
+if (position >= 31) {
+    printf("Posição: %d\n", position);
+    printf("Top 100");
+}
+*/
+/*
+6. Sabendo que as faixas etárias para votação são: 18 a 70 anos voto obrigatório; 16, 17 e acima de 70 anos voto facultativo;
+ outras idades (ou seja, menor que 16 anos) não pode votar, crie um programa que processa essa verificação. 
+ Exemplos de execução:
+
+	Idade: 20			Idade: 17			Idade: 12
+	Voto obrigatório		Voto facultativo		Não pode votar
+*/
+/*
+int age;
+
+printf("Digite sua idade: \n");
+scanf("%d", &age);
+
+if (age >= 1 && age <= 15) {
+    printf("Idade: %d\n", age);
+    printf("Não pode votar");
+}
+if (age >= 16 && age <= 17 || age >= 71 ) {
+    printf("Idade: %d\n", age);
+    printf("Voto facultativo");
+}
+if (age >= 18 && age <= 70) {
+    printf("Idade: %d\n", age);
+    printf("Voto obrigatório");
+}
+
+*/
 
     return 0;
 }
